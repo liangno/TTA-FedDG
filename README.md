@@ -14,7 +14,7 @@ If you like our project, please give us a star ⭐ on GitHub for the latest upda
 ---
 This is the official code for the 《TTA-FedDG: Leveraging Test-Time Adaptation to Address Federated Domain Generalization》. 
 
-![Overall](Fig/mFedDG.png)
+![Overall](mFedDG.png)
 <div align="center">
     
 *Fig1: This illustrates the framework of FedSPL Leverages Test-Time Adaptation to Address Federated Domain Generalization.*
