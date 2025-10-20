@@ -5,10 +5,9 @@
 <p align="center">
     <a href="https://ojs.aaai.org/index.php/AAAI/article/view/34053"><img src="https://img.shields.io/badge/AAAI-2025-003973?style=for-the-badge" alt="AAAI 2025"></a>
 </p>
-@mail2.sysu.edu.cn
 🎉🎉 **We have been accepted at AAAI-2025!**
 
-If you like our project, please give us a star ⭐ on GitHub for the latest update.My coding skills are not very good, please bear with me and give me more advice.If you have any other questions, please contact me by [email](lianghy68@mail2.sysu.edu.cn) or WeChat.
+If you like our project, please give us a star ⭐ on GitHub for the latest update.My coding skills are not very good, please bear with me and give me more advice.If you have any other questions, please contact me by [email](mailto:lianghy68@mail2.sysu.edu.cn) or WeChat.
 </div>
 
 ---
