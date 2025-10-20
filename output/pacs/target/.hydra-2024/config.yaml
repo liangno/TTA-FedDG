@@ -1,0 +1,67 @@
+world_size: 1
+gpu: 1
+rank: 0
+port: 10001
+dist_url: tcp://localhost:${port}
+dist_backend: nccl
+multiprocessing_distributed: false
+seed: 2024
+distributed: false
+train_source: false
+target_algorithm: ours
+workdir: ./output
+memo: target
+sub_memo: null
+project: pacs
+use_wandb: false
+train_fed: false
+model_fed:
+  arch: resnet18
+  bottleneck_dim: 256
+  weight_norm_dim: 0
+  num_classes: 7
+model_tta:
+  queue_size: 1024
+  T_moco: 0.07
+  m: 0.999
+  fed_log_dir: /home/lianghy68/data/Fedspl/main_fedspl/checkpoint/s.pt
+data:
+  data_root: /home/lianghy68/data/PACS/raw_images/Train val splits and h5py files
+    pre-read
+  dataset: pacs
+  target_domains:
+  - sketch
+  fed_domains:
+  - acs
+  pl_list: null
+  aug_type: moco
+  batch_size: 32
+  workers: 16
+optim:
+  name: sgd
+  lr: 0.0002
+  momentum: 0.9
+  weight_decay: 0.0001
+  nesterov: true
+  cos: true
+  exp: false
+  schedule:
+  - 10
+  - 20
+  gamma: 0.2
+learn:
+  epochs: 25
+  start_epoch: 0
+  print_freq: 200
+  contrast_type: class_aware
+  ce_type: standard
+  alpha: 1.0
+  beta: 1.0
+  eta: 1.0
+  aug_versions: wsstwsws
+  dist_type: cosine
+  ce_sup_type: weak_strong
+  refine_method: nearest_neighbors
+  num_neighbors: 10
+  queue_size: -1
+  epoch_labeling: false

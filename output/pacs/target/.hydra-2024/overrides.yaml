@@ -1,0 +1,11 @@
+- seed=2024
+- port=10001
+- memo=target
+- project=pacs
+- data.workers=16
+- data.dataset=pacs
+- data.fed_domains=[acs]
+- data.target_domains=[sketch]
+- model_fed.arch=resnet18
+- model_tta.fed_log_dir=/home/lianghy68/data/Fedspl/main_fedspl/checkpoint/s.pt
+- optim.lr=2e-4

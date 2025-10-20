@@ -1,0 +1,4 @@
+arch: "resnet18"
+bottleneck_dim: 256
+weight_norm_dim: 0   # refers to Weight Normalization layer
+num_classes: 7
